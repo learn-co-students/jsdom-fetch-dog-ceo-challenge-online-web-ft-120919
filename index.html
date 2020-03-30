@@ -9,6 +9,10 @@
     <h1>Dog CEO</h1>
 
     <div id="dog-image-container">
+      <script> fetch('https://dog.ceo/api/breeds/image/random/4')
+      .then(data => data.text())
+      .then(html => document.getElementById('dog-image-container').innerHTML = html );
+      </script>
       <!-- images here -->
     </div>
 
